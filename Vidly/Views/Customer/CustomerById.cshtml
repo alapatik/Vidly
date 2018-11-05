@@ -1,0 +1,27 @@
+﻿@model Vidly.Models.Customer
+
+@{
+    ViewBag.Title = "CustomerById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Customer Name</h3>
+
+@if (Model == null)
+{
+    <text>Customer not found!</text>
+}
+else
+{
+<div>
+    <h4>@Model.Name</h4>
+    <ul>
+        <li>Membership Type: @Model.MembershipType.Name</li>
+        @if(Model.BirthDate.HasValue)
+        {
+            <li>@Model.BirthDate.Value.ToShortDateString()</li>
+        }
+    </ul>
+</div>
+}
+
