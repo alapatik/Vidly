@@ -113,13 +113,7 @@ C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\bin\Microsoft.AI.DependencyColl
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\bin\Microsoft.AI.Web.xml
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.initialmodels.resources
-C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.newmodelstodb.resources
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.membershiptype.resources
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.membershiptypeAddedToDbset.resources
@@ -133,3 +127,8 @@ C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.Genr
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.populategenre.resources
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.moviemodelupdated.resources
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.updatemoviedb.resources
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb

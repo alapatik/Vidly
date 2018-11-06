@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
 using System.Data.Entity;
+using Vidly.ViewModel;
 
 namespace Vidly.Controllers
 {
@@ -29,6 +30,50 @@ namespace Vidly.Controllers
         {
             var customer = context.CustomerDbSet.Include(c => c.MembershipType).FirstOrDefault(c => c.Id == id);
             return View(customer);
+        }
+        public ActionResult Edit(int id)
+        {
+            var customer = context.CustomerDbSet.FirstOrDefault(c => c.Id == id);
+            var customerFormViewModel = new CustomerFormViewModel {
+                Customer = customer,
+                MembershipTypes = context.MembershipTypeDbSet.ToList()
+            };
+            return View("CustomerForm", customerFormViewModel);
+        }
+        public ActionResult New()
+        {
+            var customerFormViewModel = new CustomerFormViewModel
+            {
+                MembershipTypes = context.MembershipTypeDbSet.ToList()
+            };
+            return View("CustomerForm", customerFormViewModel);
+        }
+        [HttpPost]
+        public ActionResult Save(Customer customer)
+        {
+            if(!ModelState.IsValid)
+            {
+                var customerFormViewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = context.MembershipTypeDbSet.ToList()
+                };
+                return View("CustomerForm", customerFormViewModel);
+            }
+            if (customer.Id == 0)
+            {
+                context.CustomerDbSet.Add(customer);
+            }
+            else
+            {
+                var editCustomer = context.CustomerDbSet.FirstOrDefault(c => c.Id == customer.Id);
+                editCustomer.Name = customer.Name;
+                editCustomer.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+                editCustomer.MembershipTypeId = customer.MembershipTypeId;
+                editCustomer.BirthDate = customer.BirthDate;
+            }
+            context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
