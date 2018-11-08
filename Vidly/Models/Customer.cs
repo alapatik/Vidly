@@ -22,6 +22,22 @@ namespace Vidly.Models
         public byte MembershipTypeId { get; set; }
 
         [Display(Name= "Date of Birth")]
+        [AgeMoreThan18Validation]
         public DateTime? BirthDate{ get; set; }
+    }
+    public class AgeMoreThan18Validation : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            var customer = (Customer)validationContext.ObjectInstance;
+            if (customer.MembershipTypeId == 1)
+                return ValidationResult.Success;
+            if(customer.BirthDate == null)
+                return new ValidationResult("Date of birth is required.");
+            var age = DateTime.Today.Year - customer.BirthDate.Value.Year;
+            if (age < 18)
+                return new ValidationResult("Age must be more than or equal to 18.");
+            return ValidationResult.Success;
+        }
     }
 }

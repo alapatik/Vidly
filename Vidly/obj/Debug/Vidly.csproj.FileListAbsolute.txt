@@ -132,3 +132,4 @@ C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreComp
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\kalyan_alapati\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.validations.resources
