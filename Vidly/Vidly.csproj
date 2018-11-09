@@ -282,6 +282,10 @@
     <Compile Include="Migrations\201811080509382_validations.Designer.cs">
       <DependentUpon>201811080509382_validations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811090451222_Idmarkedasidentity.cs" />
+    <Compile Include="Migrations\201811090451222_Idmarkedasidentity.Designer.cs">
+      <DependentUpon>201811090451222_Idmarkedasidentity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -422,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811080509382_validations.resx">
       <DependentUpon>201811080509382_validations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811090451222_Idmarkedasidentity.resx">
+      <DependentUpon>201811090451222_Idmarkedasidentity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
